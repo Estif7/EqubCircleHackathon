@@ -1,0 +1,32 @@
+# .NET
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+*.suo
+
+# Angular
+node_modules/
+dist/
+.angular/
+
+# Flutter and Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+coverage/
+build/
+
+# Local settings and secrets
+appsettings.Local.json
+.env
+.env.*
+!.env.example
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
+*.log

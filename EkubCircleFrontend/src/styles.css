@@ -3,3 +3,39 @@
 .member-state{display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:flex-end}.member-state .btn{padding:6px 9px;font-size:11px}
 
 .next-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0 0 30px}.next-card{display:block;padding:22px;border:1px solid var(--line,#e6e8ec);border-radius:18px;background:#fff;text-decoration:none;color:inherit;box-shadow:0 8px 24px rgba(20,24,32,.04)}.next-card:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(20,24,32,.08)}.next-card h3{margin:8px 0 8px}.next-card strong{font-size:1.15rem}.next-card p{margin:7px 0;color:#6b7280}.next-status{display:inline-block;margin-top:8px;font-size:.88rem;color:#5b6472}.muted-card{background:#fafbfc}.toast-stack{position:fixed;right:22px;top:76px;z-index:1000;display:grid;gap:10px;max-width:360px}.toast{background:#18212f;color:#fff;padding:13px 16px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.18);cursor:pointer;font-size:.9rem}@media(max-width:760px){.next-grid{grid-template-columns:1fr}.toast-stack{left:16px;right:16px;max-width:none}}
+
+/* Form Validation UX Styles */
+input.ng-invalid.ng-touched, select.ng-invalid.ng-touched {
+  border-color: var(--danger) !important;
+  background-color: #fffbfa;
+}
+input.ng-invalid.ng-touched:focus, select.ng-invalid.ng-touched:focus {
+  border-color: var(--danger) !important;
+  box-shadow: 0 0 0 3px rgba(180, 35, 24, 0.12) !important;
+}
+input.ng-valid.ng-touched:not(:placeholder-shown):not([type="date"]), select.ng-valid.ng-touched {
+  border-color: #a3cfb1;
+}
+.field-error {
+  color: var(--danger);
+  font-size: 11.5px;
+  font-weight: 600;
+  margin-top: -3px;
+  margin-bottom: 2px;
+  display: block;
+  line-height: 1.35;
+  animation: fadeIn 0.15s ease-in;
+}
+.field-hint {
+  color: var(--muted);
+  font-size: 11.5px;
+  margin-top: -3px;
+  margin-bottom: 2px;
+  display: block;
+  line-height: 1.35;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-2px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

@@ -14,3 +14,22 @@ You'll need .NET 8, Node.js with npm, and Docker.
 4. Start the API: `dotnet run --project API/EkubCircle.API.csproj`.
 5. In another terminal, run `cd EkubCircleFrontend`, `npm install`, then `npm start`.
 6. Open `http://localhost:4200`.
+
+### Mobile (Flutter)
+
+```bash
+cd ekub_circle_mobile
+flutter pub get
+flutter run
+```
+
+## Team & Contributors
+
+| Name / GitHub | Role / Focus Area |
+| --- | --- |
+| [@Estifc137](https://github.com/Estifc137) | Project Lead, Architecture, Docker & Solution Setup |
+| [@samvode27](https://github.com/samvode27) | Domain Models, Database Architecture & EF Core Infrastructure |
+| [@Nahom2231](https://github.com/Nahom2231) | Application Services, Business Logic & DTO Contracts |
+| [@mikeeten](https://github.com/mikeeten) | ASP.NET Core Web API, SignalR Hub & E2E Circle Integrations |
+| [@selamsewalemu](https://github.com/selamsewalemu) | Angular Web Portal, Real-time Dashboard & UI Design |
+| [@wongellakew-lab](https://github.com/wongellakew-lab) | Flutter Cross-Platform Mobile Client |

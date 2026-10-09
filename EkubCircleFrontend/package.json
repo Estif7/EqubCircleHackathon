@@ -5,7 +5,8 @@
   "scripts": {
     "start": "ng serve --proxy-config proxy.conf.json",
     "build": "ng build",
-    "test": "ng test"
+    "test": "ng test",
+    "format": "prettier --write \"src/**/*.{ts,html,css}\""
   },
   "dependencies": {
     "@angular/animations": "^20.2.0",
@@ -25,6 +26,7 @@
     "@angular-devkit/build-angular": "^20.2.0",
     "@angular/cli": "^20.2.0",
     "@angular/compiler-cli": "^20.2.0",
+    "prettier": "^3.5.3",
     "typescript": "~5.9.2"
   }
 }
